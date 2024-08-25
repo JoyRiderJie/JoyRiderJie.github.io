@@ -18,9 +18,9 @@
 
 欢迎关注我在其他平台的账号 🤗
 
-公众号：![编码技术汇](./JoyRiderJie.jpg)
+公众号
 <br></br>
-
+：![编码技术汇](./JoyRiderJie.jpg)
 csdn：[☞黑心萝卜三条杠☜](https://blog.csdn.net/qq_53960242)
 
 
