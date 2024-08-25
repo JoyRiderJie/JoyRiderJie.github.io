@@ -2,34 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>阿杆的博客</title>
+    <title>博客模版</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!-- 设置浏览器图标 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="image/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="image/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="image/icons/favicon-16x16.png">
-    <link rel="manifest" href="image/icons/site.webmanifest">
 
     <!-- vue主题 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"/>
     <!-- 弹框样式 -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.min.css">
-
-    <!-- baidu analysis -->
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9d53c628e38dd059ee320328266742fb";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-    </script>
+    <!-- 代码高亮 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 </head>
 
 <body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
@@ -40,8 +26,8 @@
 <script>
     window.$docsify = {
         el: '#app',
-        name: '阿杆的博客',
-        repo: 'https://github.com/stick-i/sticki-blog',
+        name: '目录',
+        repo: 'https://github.com/',
         loadNavbar: true, //开启导航栏
         coverpage: true,  //开启封面
         loadSidebar: true,//开启侧边栏
@@ -68,16 +54,10 @@
 
         // 文档页脚
         footer: {
-            copy: 'Copyright &copy; 2024</span>',
-            auth: 'by <strong>阿杆</strong>',
+            copy: '<span>Copyright &copy; 2022</span>',
+            auth: ' <span> <a href="https://github.com/" target="_blank">GitHub</a> </span>',
             pre: '<hr/>',
             style: 'text-align: center;',
-        },
-
-        copyCode: {
-            buttonText: 'Copy',
-            errorText: 'Error',
-            successText: 'OK!'
         },
 
         // 翻页插件
@@ -93,11 +73,19 @@
     }
 
     // 复制提醒
-    document.body.oncopy = function () {
-        swal("复制成功 🎉",
-            "若要转载或引用请务必保留原文链接，并申明来源。\n\n如果你觉得本仓库不错，欢迎来 GitHub 点个 star 😊！",
-            "success");
-    };
+    document.body.oncopy = function (e) {
+        e.preventDefault();
+        let text = window.getSelection().toString();
+        if (text) {
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: '复制成功',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    }
 </script>
 
 <!-- emoji -->
@@ -124,7 +112,6 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-matlab.js"></script>
 
 <!-- 用于渲染 LaTex 数学方程 -->
-
 <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
 
 <!-- 文档页脚增强 -->
@@ -132,9 +119,6 @@
 
 <!-- 弹框 -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert@1.1.3/dist/sweetalert.min.js"></script>
-
-<!-- 访问量统计 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- 图片缩放 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
@@ -146,7 +130,7 @@
 <script src="//cdn.jsdelivr.net/npm/docsify-pagination@latest/dist/docsify-pagination.min.js"></script>
 
 <!-- 侧边栏目录折叠 -->
-<!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+<script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
 </body>
 </html>
