@@ -1,15 +1,6 @@
 ## 简介
 这是一个借助github创建个人博客的模板，可以快速创建一个个人博客，并且支持markdown语法。
 
-## 使用方法
-1. 在github上创建一个仓库，仓库名为`用户名.github.io`，例如`zhangsan.github.io`。
-2. 在本地创建一个文件夹，例如`zhangsan.github.io`，然后clone仓库到本地。
-3. 在`zhangsan.github.io`文件夹中创建一个`template1`文件夹，用于存放博客内容。
-4. 在`template1`文件夹中创建一个markdown文件，例如`2022-01-01-first-blog.md`，在markdown文件中编写博客内容，可以使用markdown语法。
-5. 修改`_coverpage.md`、`_navbar.md`、`_sidebar.md`、`gitignore.md`、`blog-readme.md`、`index.html`等文件，用于设置博客样式、导航栏、侧边栏、忽略文件、readme文件、首页等。
-6. 在github上提交代码，等待github自动部署。
-7. . 在浏览器中输入`https://用户名.github.io`，即可访问博客。
-
 ## 目录解释
 
 |---------image1:存储根目录图片信息
@@ -56,6 +47,22 @@
 
 |---------README.md:项目说明文件
 
+## 使用方法
+1. 在github上创建一个仓库，仓库名为`用户名.github.io`，例如`zhangsan.github.io`。
+2. 在本地创建一个文件夹，例如`zhangsan.github.io`，然后clone仓库到本地。
+3. 在`zhangsan.github.io`文件夹中创建一个`template1`文件夹，用于存放博客内容。
+4. 在`template1`文件夹中创建一个markdown文件，例如`2022-01-01-first-blog.md`，在markdown文件中编写博客内容，可以使用markdown语法。
+5. 修改`_coverpage.md`、`_navbar.md`、`_sidebar.md`、`gitignore.md`、`blog-readme.md`、`index.html`等文件，用于设置博客样式、导航栏、侧边栏、忽略文件、readme文件、首页等。
+6. 在github上提交代码，等待github自动部署。
+7. . 在浏览器中输入`https://用户名.github.io`，即可访问博客。
+
+## 其他信息设置
+1. 在`information\about.md`文件中可添加网站的详细信息，包括网站标题、网站描述、网站关键词等。
+2. 在`information\contact.md`文件中可添加联系方式，包括邮箱、QQ、微信等。
+3. 在`information\links.md`文件中可添加友情链接。
+4. 在`information\donate.md`文件中可添加捐赠信息。
+5. 在`information\changelog.md`文件中可添加网站更新日志信息。
+
 ## 博客创建示例
 1. 在`template1`文件夹中创建一个`2022-01-01-first-blog.md`文件，内容如下：
 ```
@@ -69,13 +76,6 @@
 ```
 3. 在github上提交代码，等待github自动部署。
 4. 在浏览器中输入`https://用户名.github.io`，即可访问博客。
-
-## 其他信息设置
-1. 在`information\about.md`文件中可添加网站的详细信息，包括网站标题、网站描述、网站关键词等。
-2. 在`information\contact.md`文件中可添加联系方式，包括邮箱、QQ、微信等。
-3. 在`information\links.md`文件中可添加友情链接。
-4. 在`information\donate.md`文件中可添加捐赠信息。
-5. 在`information\changelog.md`文件中可添加网站更新日志信息。
 
 ## 注意事项
 1. 请确保在提交代码时，不要将敏感信息提交到github上，例如密码、密钥等。
