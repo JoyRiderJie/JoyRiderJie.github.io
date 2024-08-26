@@ -17,7 +17,7 @@
 
 > <img src="image/smile.jpg" alt="">
 
-GitHub：[github主页](https://github.com)
+GitHub：[github主页](https://github.com/JoyRiderJie/JoyRiderJie.github.io)
 
 
 
